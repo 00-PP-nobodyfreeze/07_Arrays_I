@@ -8,17 +8,17 @@
  */
 
 /*** 02. Theorie: Array */
-let arr;
+// let arr;
 // arr = new Array();   // Konstruktor
-arr = [];               // Literal
-arr = [2,7,11,4];
+// arr = [];               // Literal
+// arr = [2,7,11,4,8,10];
 
-output(arr);
-output(arr.length);     // Anzahl der Elemente
-output(arr[0]);         // Index 0 (1. Position im Array)
-output(arr[4]);         // letzte Position /konkret
-output(arr(arr.length-1)); // letzte Position /allgemein
- 
+// output(arr);
+// output(arr.length);     // Anzahl der Elemente
+// output(arr[0]);         // Index 0 (1. Position im Array)
+// output(arr[4]);         // letzte Position /konkret
+// output(arr(arr.length-1)); // letzte Position /allgemein
+
 /**
  *   PRAXIS
  * 
@@ -44,6 +44,25 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
     return str;
 }
 
+/*** 01a. Funktionalität mit Array 1 */
+// Kritik | Überlegung
+// word1,word2, .... wordN :: Semantische Struktur
+// arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
+// --> Transformation semantisches Problem --> numerisches Problem
+// output(getSentenceArr("Ich","bin","der","coole","Max","Mütze"));
+function getSentenceArr(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str =   arr[0] + GAP +
+                arr[1] + GAP +
+                arr[2] + GAP +
+                arr[3] + GAP +
+                arr[4] + GAP +
+                arr[5] + 
+                PUNCT;
+
+    return str;
+}
 
 
 
