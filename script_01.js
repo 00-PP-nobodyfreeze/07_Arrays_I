@@ -18,7 +18,7 @@ output(arr.length);     // Anzahl der Elemente
 output(arr[0]);         // Index 0 (1. Position im Array)
 output(arr[4]);         // letzte Position /konkret
 output(arr(arr.length-1)); // letzte Position /allgemein
-
+ 
 /**
  *   PRAXIS
  * 
